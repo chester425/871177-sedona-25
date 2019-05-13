@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Иван Гирин](https://up.htmlacademy.ru/htmlcss/25/user/871177).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev)..
 
 ---
 
