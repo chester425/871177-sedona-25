@@ -40,7 +40,30 @@
     <h3 class="titel-search">Заинтересовались</h3>
     <p>Укажите предполагаемые даты поездки,
       и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <!-- Здесь будет форма-->
+      <section class="search">
+        <h3>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h3>
+        <form class="search-form" action="index.html" method="post">
+          <p class="search-item">
+            <label for="search-date-visit">Дата заезда:</label>
+            <input id="search-date-visit" type="text" name="date" value="" placeholder="дд.мм.гггг">
+          </p>
+          <p class="search-item">
+            <label for="search-date-leave">Дата выезда:</label>
+            <input id="search-date-leave" type="text" name="date" value="" placeholder="дд.мм.гггг">
+          </p>
+          <p class="search-item">
+            <label for="search-grown">Взрослые:</label>
+            <input id="search-grown" type="number" name="number" value="" placeholder="количество">
+          </p>
+          <p class="search-item">
+            <label for="search-baby">Дети:</label>
+            <input id="search-baby" type="number" name="number" value="" placeholder="количество">
+          </p>
+          <button class="search-button" type="submit" name="button">Найти</button>
+        </form>
+
+      </section>
+
 
     </main>
     <footer class="site-footer">
