@@ -29,7 +29,7 @@ a{
   text-decoration: none;
 }
 .search {
-  displa:none;
+  display:none;
 }
 .site-header-logo{
   float: right;
@@ -130,7 +130,7 @@ a{
 }
 .titel-form:focus{
   color: #8d857f;
-  background-color:#6503e33;
+  background-color:#503e33;
 }
 .search-item{
   color: #000000;
