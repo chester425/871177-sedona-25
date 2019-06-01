@@ -1,0 +1,13 @@
+@font-face {
+font-family: 'PT Sans';
+font-weight: 400;
+src: url('/Users/chester425/Documents/GitHub/871177-sedona-25/fonts/web/ptsans.woff2') format('woff2'),
+url('/Users/chester425/Documents/GitHub/871177-sedona-25/fonts/web/ptsans.woff') format('woff');
+}
+
+@font-face {
+font-family: 'PT Sans';
+font-weight: 700;
+src: url('/Users/chester425/Documents/GitHub/871177-sedona-25/fonts/web/ptsansbold.woff2') format('woff2'),
+url('/Users/chester425/Documents/GitHub/871177-sedona-25/fonts/web/ptsansbold.woff') format('woff');
+}
