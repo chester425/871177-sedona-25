@@ -14,6 +14,10 @@
 
 body {
     margin: 0;
+    padding: 0;
+
+
+
     color: #333333;
     background-color: #ffffff;
     font-family: "PT Sans", Arial, sans-serif;
@@ -24,33 +28,68 @@ body {
 
 a {
     text-decoration: none;
+
 }
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+
+}
+.site-header{
+  margin: 0;
+  width: 1200px;
+  position: relative;
+
+}
+
 
 .search {
     display: none;
 }
 
-.site-header-logo {
-    float: right;
-    margin-right: 50%;
-}
 
-.main-navigation {
-    color: #000000;
-    background-color: #ffffff;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 26px;
+.site-header-logo {
+  float: right;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 480px;
+  }
+.main-navigation{
+
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
 }
 
 .site-navigation {
-    list-style: none;
+  list-style: none;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
 }
+.site-navigation li{
+  width: 240px;
+}
+.photo{
+  margin-right: 240px;
+}
+
 
 .site-navigation a {
     color: #000000;
-}
 
+
+}
 .site-navigation a:hover {
     color: #81b3d2;
     background-color: #ffffff;
