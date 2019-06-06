@@ -14,7 +14,7 @@
 
 body {
     margin: 0;
-    padding: 0;
+    margin-right: 0;
 
 
 
@@ -25,6 +25,7 @@ body {
     font-weight: 400;
     line-height: 21px;
 }
+
 
 a {
     text-decoration: none;
@@ -37,15 +38,13 @@ a {
 }
 .site-header{
   margin: 0;
-  width: 1200px;
+  width: 100%;
   position: relative;
 
 }
 
 
-.search {
-    display: none;
-}
+
 
 
 .site-header-logo {
@@ -67,20 +66,21 @@ a {
 .site-navigation {
   list-style: none;
   margin: 0;
+  padding-left: 0;
   padding-top: 20px;
   padding-bottom: 20px;
-
+  width: 1200px;
   display: flex;
 
-  justify-content: space-between;
+  justify-content: space-between:;
   align-items: center;
-  flex-wrap: wrap;
+
 
 }
 .site-navigation li{
   width: 240px;
 }
-.photo{
+.site-navigation li:nth-child(2){
   margin-right: 240px;
 }
 
@@ -104,6 +104,12 @@ a {
     color: #766357;
     background-color: #ffffff;
 }
+.photo-welcome{
+  position: absolute;
+  top: 160px;
+  left: 320px;
+
+  }
 
 .titel-reasons {
     list-style: none;
@@ -125,6 +131,9 @@ a {
     line-height: 26px;
 }
 
+
+
+
 .titel-search {
     list-style: none;
     text-align: center;
@@ -144,15 +153,37 @@ a {
     font-weight: 400;
     line-height: 24px;
 }
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
 
-.titel-form {
+}
+.titel-search-wrapper{
+  width: 100%;
+}
+.titel-form-wrapper{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+  .titel-form {
+padding-top: 35px;
+padding-bottom: 35px;
+padding-left: 140px;
+padding-right: 140px;
+margin-left: 315px;
+margin-right: 315px;
+
     text-align: center;
     color: #ffffff;
     background-color: #766357;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+
 }
+
 
 .titel-form:hover {
     color: #ffffff;
@@ -163,7 +194,10 @@ a {
     color: #8d857f;
     background-color: #503e33;
 }
-
+.search {
+  display: flex;
+  justify-content: center;
+}
 .search-item {
     color: #000000;
     background-color: #ffffff;
@@ -187,7 +221,16 @@ a {
 }
 
 .site-footer {
+    padding: 36px 0;
     background-color: transparent;
+}
+.box-footer{
+  display: flex;
+}
+.hashtag{
+  margin: 0;
+  width: 140Px;
+  margin-right: 255px;
 }
 
 .hashtag a {
@@ -199,6 +242,8 @@ a {
 }
 
 .social {
+    margin: 0;
+    width: 150px;
     list-style: none;
     text-align: center;
 }
@@ -210,7 +255,10 @@ a {
 }
 
 .site-footer-logo {
+    margin: 0;
     text-align: right;
+    width: 200px;
+    margin-left: 225px;
 }
 
 .footer-logo {
@@ -219,6 +267,16 @@ a {
     font-weight: 400;
     line-height: 26px;
 }
+
+
+
+.wrapper-catalog-container{
+  display: flex;
+  flex-direction: column;
+
+
+}
+
 
 .title-hotels{
     color: #000000;
