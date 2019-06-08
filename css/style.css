@@ -1,23 +1,18 @@
 @font-face {
     font-family: 'PT Sans';
     font-weight: 400;
-    src: url('../fonts/ptsans.woff2') format('woff2'),
-    url('../fonts/ptsans.woff') format('woff');
+    src: url('../fonts/ptsans.woff2') format('woff2'), url('../fonts/ptsans.woff') format('woff');
 }
 
 @font-face {
     font-family: 'PT Sans';
     font-weight: 700;
-    src: url('../fonts/ptsansbold.woff2') format('woff2'),
-    url('../fonts/ptsansbold.woff') format('woff');
+    src: url('../fonts/ptsansbold.woff2') format('woff2'), url('../fonts/ptsansbold.woff') format('woff');
 }
 
 body {
     margin: 0;
     margin-right: 0;
-
-
-
     color: #333333;
     background-color: #ffffff;
     font-family: "PT Sans", Arial, sans-serif;
@@ -26,70 +21,66 @@ body {
     line-height: 21px;
 }
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
 
 a {
     text-decoration: none;
-
 }
+
 .visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-
-}
-.site-header{
-  margin: 0;
-  width: 100%;
-  position: relative;
-
+    position: absolute;
+    clip: rect(0 0 0 0);
 }
 
-
-
-
+.site-header {
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
 
 .site-header-logo {
-  float: right;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  left: 480px;
-  }
-.main-navigation{
+    float: right;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 480px;
+}
 
-  color: #000000;
-  background-color: #ffffff;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 26px;
+.main-navigation {
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
 }
 
 .site-navigation {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 1200px;
-  display: flex;
-
-  justify-content: space-between:;
-  align-items: center;
-
-
-}
-.site-navigation li{
-  width: 240px;
-}
-.site-navigation li:nth-child(2){
-  margin-right: 240px;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.site-navigation li {
+    width: 240px;
+}
+
+.site-navigation li:nth-child(2) {
+    margin-right: 240px;
+}
 
 .site-navigation a {
     color: #000000;
-
-
 }
+
 .site-navigation a:hover {
     color: #81b3d2;
     background-color: #ffffff;
@@ -100,18 +91,45 @@ a {
     background-color: #ffffff;
 }
 
-.active a{
+.active a {
     color: #766357;
     background-color: #ffffff;
 }
-.photo-welcome{
-  position: absolute;
-  top: 160px;
-  left: 320px;
 
-  }
+
+/* фото*/
+
+.picture {
+    border: 5px solid #ffffff;
+    padding: 5px;
+    width: 1200px;
+    height: 510px;
+    background-color: #ffffff;
+    background-image: url("../img/polygon.svg"), url("../img/background.jpg");
+    background-position: bottom -3px center;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+}
+
+.photo-welcome {
+    margin-top: 60px;
+    margin-left: 370px;
+    background-position: center;
+}
+
+.reason-header {
+    margin: 0;
+    width: 1200px;
+}
 
 .titel-reasons {
+    width: 495px;
+    margin: 0 auto;
+    padding-top: 65px;
+    padding-bottom: 60px;
+}
+
+.titel-reasons h2 {
     list-style: none;
     text-align: center;
     color: #333333;
@@ -121,7 +139,7 @@ a {
     line-height: 26px;
 }
 
-.titel-reasons-city {
+.titel-reasons p {
     list-style: none;
     text-align: center;
     color: #333333;
@@ -129,10 +147,123 @@ a {
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
+    padding-top: 40px;
+}
+
+.first-reason-wrapper,
+.second-reason-wrapper {
+    width:1200px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.first-reason-container,
+.second-reason-container {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    min-height: 255px;
+    background-color: #81b3d2;
+}
+
+.first-photo-container,
+.second-photo-container {
+    margin: 0;
+    padding: 0;
+    width: 800px;
+    min-height: 255px;
+}
+
+.first-titel-reasons,
+.second-titel-reasons {
+    color: #ffffff;
+    background-color: #81b3d2;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.first-reason-wrapper p,
+.second-reason-wrapper p {
+    text-align: center;
+    color: #ffffff;
+    background-color: #81b3d2;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
 }
 
 
+/* иконки жилье еда сувениры   */
 
+.icons-reason-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.icons-reason {
+    width: 400px;
+}
+
+.icons-reason h3 {
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.icons-reason p {
+    color: #333333;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+
+/* 3-я,4-я,5-я причина*/
+
+.third-reason-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.third-reason {
+    width: 400px;
+    background-color: #eeeeee;
+}
+
+.third-reason h3 {
+    text-align: center;
+    color: #000000;
+    background-color: #eeeeee;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.third-reason p {
+    color: #333333;
+    background-color: #eeeeee;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
 
 .titel-search {
     list-style: none;
@@ -153,37 +284,36 @@ a {
     font-weight: 400;
     line-height: 24px;
 }
-.wrapper{
-  display: flex;
-  flex-wrap: wrap;
 
-}
-.titel-search-wrapper{
-  width: 100%;
-}
-.titel-form-wrapper{
-  display: flex;
-  justify-content: center;
-  width: 100%;
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-  .titel-form {
-padding-top: 35px;
-padding-bottom: 35px;
-padding-left: 140px;
-padding-right: 140px;
-margin-left: 315px;
-margin-right: 315px;
+.titel-search-wrapper {
+    width: 1200px;
+}
 
+.titel-form-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.titel-form {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 140px;
+    padding-right: 140px;
+    margin-left: 315px;
+    margin-right: 315px;
+    margin-bottom: 0;
     text-align: center;
     color: #ffffff;
     background-color: #766357;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
-
 }
-
 
 .titel-form:hover {
     color: #ffffff;
@@ -194,10 +324,25 @@ margin-right: 315px;
     color: #8d857f;
     background-color: #503e33;
 }
-.search {
-  display: flex;
-  justify-content: center;
+
+
+/* Карта */
+
+.maps {
+    width: 1200px;
 }
+
+.google-maps {
+    width: 1200px;
+    height: 475px;
+    border: 0;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
 .search-item {
     color: #000000;
     background-color: #ffffff;
@@ -220,17 +365,26 @@ margin-right: 315px;
     line-height: 26px;
 }
 
+
+/* footer*/
+
 .site-footer {
     padding: 36px 0;
     background-color: transparent;
 }
-.box-footer{
-  display: flex;
+
+.box-footer {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
-.hashtag{
-  margin: 0;
-  width: 140Px;
-  margin-right: 255px;
+
+.hashtag {
+    margin: 0;
+    width: 400px;
 }
 
 .hashtag a {
@@ -242,9 +396,8 @@ margin-right: 315px;
 }
 
 .social {
-    margin: 0;
-    width: 150px;
     list-style: none;
+    width: 400px;
     text-align: center;
 }
 
@@ -256,9 +409,7 @@ margin-right: 315px;
 
 .site-footer-logo {
     margin: 0;
-    text-align: right;
-    width: 200px;
-    margin-left: 225px;
+    width: 400px;
 }
 
 .footer-logo {
@@ -268,17 +419,12 @@ margin-right: 315px;
     line-height: 26px;
 }
 
-
-
-.wrapper-catalog-container{
-  display: flex;
-  flex-direction: column;
-
-
+.wrapper-catalog-container {
+    display: flex;
+    flex-direction: column;
 }
 
-
-.title-hotels{
+.title-hotels {
     color: #000000;
     background-color: #ffffff;
     font-size: 21px;
