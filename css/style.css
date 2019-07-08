@@ -173,7 +173,7 @@ img {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    width: 100%;
+    width: 1200px;
     background-color: #4d5860;
 }
 
